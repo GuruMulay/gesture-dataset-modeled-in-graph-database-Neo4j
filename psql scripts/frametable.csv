@@ -1,0 +1,11 @@
+Project	Session Name	File Name	Start Frame	End Frame	Start Timestamp	End Timestamp	Duration(ns)	Start Frame Timestamp	End Frame Timestamp	Label
+CWC - No Sound	Session 1-Participant 2-Block 1	s01\part1_layout_p02\20151105_191251_00_RGB.avi	2	40	938357	14599043	13660686	2	40	Unknown
+CWC - No Sound	Session 1-Participant 2-Block 1	s01\part1_layout_p02\20151105_191251_00_RGB.avi	40	100	14599043	36269043	21670000	40	98	body: move, front;
+CWC - No Sound	Session 1-Participant 2-Block 1	s01\part1_layout_p02\20151105_191251_00_RGB.avi	100	118	36268336	42938336	6670000	98	117	Unknown
+CWC - No Sound	Session 1-Participant 2-Block 1	s01\part1_layout_p02\20151105_191251_00_RGB.avi	119	136	43000000	49670000	6670000	117	134	hands: into L;
+CWC - No Sound	Session 1-Participant 2-Block 1	s01\part1_layout_p02\20151105_191251_00_RGB.avi	136	157	49670000	57670000	8000000	134	154	arms: move, front; hands: L;
+CWC - No Sound	Session 1-Participant 2-Block 1	s01\part1_layout_p02\20151105_191251_00_RGB.avi	156	213	57599160	79929160	22330000	154	210	arms: rotate; hands: L;
+CWC - No Sound	Session 1-Participant 2-Block 1	s01\part1_layout_p02\20151105_191251_00_RGB.avi	214	269	80000000	101330000	21330000	210	265	arms: rotate; hands: L;
+CWC - No Sound	Session 1-Participant 2-Block 1	s01\part1_layout_p02\20151105_191251_00_RGB.avi	269	300	101268256	113268471	12000215	265	296	body: still;
+CWC - No Sound	Session 1-Participant 2-Block 1	s01\part1_layout_p02\20151105_191251_00_RGB.avi	300	355	113268471	135598471	22330000	296	351	arms: move, right; hands: L;
+CWC - No Sound	Session 1-Participant 2-Block 1	s01\part1_layout_p02\20151105_191251_00_RGB.avi	355	415	135599114	158268268	22669154	351	409	Unknown

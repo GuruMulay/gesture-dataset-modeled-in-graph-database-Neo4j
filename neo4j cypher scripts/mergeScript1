@@ -1,0 +1,37 @@
+MERGE (s01:Session{name:"Session 1"})-[r:PART_OF {}]->(c:Category {name:"No Sound"})
+MERGE (s02:Session {name:"Session 2"})-[:PART_OF]->(c)
+MERGE (s03:Session {name:"Session 3"})-[:PART_OF]->(c)
+
+
+MERGE (p01:Participant {name: "Participant 1", age: '25', sex: 'M', dominantHand: 'R'})-[:PART_OF]->(s01)
+MERGE (p02:Participant {name: "Participant 2", age: '25', sex: 'M', dominantHand: 'R'})-[:PART_OF]->(s01)
+
+
+MERGE (p03:Participant {name: "Participant 3", age: '25', sex: 'M', dominantHand: 'R'})-[:PART_OF]->(s02)
+MERGE (p04:Participant {name: "Participant 4", age: '25', sex: 'M', dominantHand: 'R'})-[:PART_OF]->(s02)
+
+
+MERGE (p05:Participant {name: "Participant 5", age: '25', sex: 'M', dominantHand: 'R'})-[:PART_OF]->(s03)
+MERGE (p06:Participant {name: "Participant 6", age: '25', sex: 'M', dominantHand: 'R'})-[:PART_OF]->(s03)
+
+
+MERGE (b0101:Block {name: "Block 0101", layoutFileName: 's01\\part1_layout_p02\\20151105_191251_00_RGB.avi', duration: '60', blockFileName: 's01\\part1_block_p01\\20151105_191251_00_RGB.avi'})-[:PART_OF]->(p01)
+
+MERGE (b0102:Block {name: "Block 0102", layoutFileName: 's01\\part1_layout_p02\\20151105_191251_00_RGB.avi', duration: '60', blockFileName: 's01\\part1_block_p01\\20151105_191251_00_RGB.avi'})-[:PART_OF]->(p01)
+
+MERGE (b0103:Block {name: "Block 0103", layoutFileName: 's01\\part1_layout_p02\\20151105_191251_00_RGB.avi', duration: '60', blockFileName: 's01\\part1_block_p01\\20151105_191251_00_RGB.avi'})-[:PART_OF]->(p01)
+
+MERGE (b0104:Block {name: "Block 0104", layoutFileName: 's01\\part1_layout_p02\\20151105_191251_00_RGB.avi', duration: '60', blockFileName: 's01\\part1_block_p01\\20151105_191251_00_RGB.avi'})-[:PART_OF]->(p01)
+
+MERGE (b0105:Block {name: "Block 0105", layoutFileName: 's01\\part1_layout_p02\\20151105_191251_00_RGB.avi', duration: '60', blockFileName: 's01\\part1_block_p01\\20151105_191251_00_RGB.avi'})-[:PART_OF]->(p01)
+
+
+MERGE (g01:Gesture {name:"arms apart, left", StartFrame:"1891", EndFrame:"1923", StartTimestamp:"742938092", EndTimestamp:"755938092", DurationNS:"13000000", StartFrameTimestamp:"1860", EndFrameTimestamp:"1892"})-[:PERFORMED_IN]->(b0101)
+
+MERGE (g02:Gesture {name:"RA: move, up", StartFrame:"1891", EndFrame:"1923", StartTimestamp:"742938092", EndTimestamp:"755938092", DurationNS:"13000000", StartFrameTimestamp:"1860", EndFrameTimestamp:"1892"})-[:PERFORMED_IN]->(b0101)
+
+MERGE (g03:Gesture {name:"head: nod", StartFrame:"1891", EndFrame:"1923", StartTimestamp:"742938092", EndTimestamp:"755938092", DurationNS:"13000000", StartFrameTimestamp:"1860", EndFrameTimestamp:"1892"})-[:PERFORMED_IN]->(b0101)
+
+
+RETURN s01,s02,s03,r,c,p01,p02,p03,p04,p05,p06,b0101,b0102,b0103,b0104,b0105,g01,g02,g03
+

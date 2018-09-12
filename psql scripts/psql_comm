@@ -1,0 +1,65 @@
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04
+
+sudo -i -u postgres  --> postgres@guru
+psql
+psql -d <cwcdb>  --> login to db
+
+
+to describe table:
+\d+ frame_table
+
+to see all tables:
+\dt
+
+SELECT COUNT(*) FROM frame_table;
+
+==========================================================================
+NOTES:
+==========================================================================
+USE text  with '%s' and not '{%s}' instead of VARCHAR(100)[]; it avoid the issue -> {"body: move", front;}
+
+USE QUERY: SELECT COUNT(*) FROM main_3sessions WHERE Label = 'body: move, front;';
+
+
+
+ALTER TABLE main_table ADD PRIMARY KEY (gestureid);
+ALTER TABLE session_table1 ADD PRIMARY KEY (SessionName);
+
+---------------------------------------------------
+SELECT * FROM pcount_no_sound WHERE label @> ARRAY['head: nod;']::char[];
+
+following both are equivalent:
+
+SELECT * FROM pcount_no_sound WHERE label @> ARRAY['head: nod;']::varchar[];
+
+SELECT * FROM pcount_no_sound WHERE label && '{head: nod;}'::varchar[];
+
+SELECT * FROM pcount_no_sound WHERE label @> ARRAY['RA: move', 'up;']::varchar[];
+
+---------------------------------------------------
+Queries on main table 
+
+for VARCHAR --->
+SELECT COUNT(*) FROM main_3sessions WHERE label @> ARRAY['{body: move, front;}']::varchar[];
+
+for text --->
+SELECT COUNT(*) FROM main_3sessions WHERE Label = 'body: move, front;';
+ans = 36
+
+SELECT COUNT(*) FROM main_3sessions WHERE Label = 'body: move, front;' AND Session = 'Session 1';
+ans = 7
+
+SELECT COUNT(*) FROM main_3sessions WHERE Label = 'head: nod;' AND Session = 'Session 2';
+ans = 30
+
+SELECT Label, Session, FileName FROM main_3sessions WHERE Label = 'body: move, front;' AND Session = 'Session 3';
+
+---------------------------------------------------
+
+https://makandracards.com/makandra/36097-postgresql-how-to-add-remove-modify-array-values-and-how-to-replace-1-value-with-multiple-values
+
+To remove a label:
+UPDATE pcount_no_sound SET label = array_remove(label, 'RH: tap;');
+
+label 1 is text[] label is text:
+UPDATE pcount_with_sound SET label1 = string_to_array(label, ':');

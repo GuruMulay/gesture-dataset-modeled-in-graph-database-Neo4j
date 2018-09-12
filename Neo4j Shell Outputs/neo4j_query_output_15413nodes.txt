@@ -1,0 +1,177 @@
+e                              | n.startFrame | n.endFrame | p.pName         |
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+| "body: move, front;" | "Session 2"               | "s02\part1_layout_p04\20151106_214647_00_RGB.avi" | "2429"       | "2456"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_214647_00_RGB.avi" | "2267"       | "2281"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215120_00_RGB.avi" | "393"        | "414"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_214647_00_RGB.avi" | "649"        | "676"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_214647_00_RGB.avi" | "1365"       | "1387"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_214647_00_RGB.avi" | "1143"       | "1189"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_214647_00_RGB.avi" | "1774"       | "1791"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_214357_00_RGB.avi" | "455"        | "476"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_214357_00_RGB.avi" | "562"        | "585"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_214521_00_RGB.avi" | "267"        | "283"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215829_00_RGB.avi" | "2453"       | "2500"     | "PARTICIPANT 4" |
+| "body: move, front;" | "Session 2"               | "s02\part1_layout_p04\20151106_215829_00_RGB.avi" | "2007"       | "2042"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215829_00_RGB.avi" | "1224"       | "1244"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215829_00_RGB.avi" | "744"        | "762"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215829_00_RGB.avi" | "409"        | "438"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215829_00_RGB.avi" | "139"        | "157"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215547_00_RGB.avi" | "978"        | "1013"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215547_00_RGB.avi" | "334"        | "372"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215320_00_RGB.avi" | "1048"       | "1081"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215320_00_RGB.avi" | "977"        | "1001"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215320_00_RGB.avi" | "303"        | "329"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215320_00_RGB.avi" | "638"        | "674"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215120_00_RGB.avi" | "657"        | "688"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215120_00_RGB.avi" | "688"        | "714"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215829_00_RGB.avi" | "4442"       | "4461"     | "PARTICIPANT 4" |
+| "body: move, front;" | "Session 2"               | "s02\part1_layout_p04\20151106_215829_00_RGB.avi" | "2644"       | "2667"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_193937_00_RGB.avi" | "702"        | "719"      | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_193937_00_RGB.avi" | "1097"       | "1117"     | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_193937_00_RGB.avi" | "1303"       | "1325"     | "PARTICIPANT 5" |
+| "RA: move, up;"      | "Session 3"               | "s03\part2_layout_p05\20151109_193937_00_RGB.avi" | "1383"       | "1402"     | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_193627_00_RGB.avi" | "2003"       | "2018"     | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_194414_00_RGB.avi" | "629"        | "641"      | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_194414_00_RGB.avi" | "796"        | "815"      | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_194134_00_RGB.avi" | "1741"       | "1775"     | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_194134_00_RGB.avi" | "1575"       | "1603"     | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_194134_00_RGB.avi" | "1924"       | "1948"     | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_194614_00_RGB.avi" | "1067"       | "1101"     | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_194757_00_RGB.avi" | "621"        | "645"      | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_194757_00_RGB.avi" | "700"        | "726"      | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_194757_00_RGB.avi" | "327"        | "360"      | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_194757_00_RGB.avi" | "547"        | "555"      | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_194614_00_RGB.avi" | "145"        | "168"      | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_195011_00_RGB.avi" | "956"        | "983"      | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_195011_00_RGB.avi" | "1854"       | "1884"     | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_195011_00_RGB.avi" | "1620"       | "1649"     | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_194757_00_RGB.avi" | "1437"       | "1446"     | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_194757_00_RGB.avi" | "1318"       | "1351"     | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_194757_00_RGB.avi" | "1015"       | "1052"     | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_195206_00_RGB.avi" | "91"         | "120"      | "PARTICIPANT 5" |
+| "RA: move, up;"      | "Session 3"               | "s03\part2_layout_p05\20151109_193627_00_RGB.avi" | "1242"       | "1269"     | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_193627_00_RGB.avi" | "298"        | "343"      | "PARTICIPANT 5" |
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+51 rows
+107 ms
+neo4j-sh (?)$ MATCH (p:Participant)<-[r:PERFORMED_BY]-(n:Label)-[:PRESENT_IN]->(SessionName) 
+> WHERE n.labelName IN ['body: move, front;', 'head: nod;', 'RA: move, up;'] AND SessionName.sessionNumber IN ["Session 2", "Session 3"] AND p.pName IN ["PARTICIPANT 4", "PARTICIPANT 5"] 
+> RETURN n.labelName, SessionName.sessionNumber, SessionName.fileName, n.startFrame, n.endFrame, p.pName;
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+| n.labelName          | SessionName.sessionNumber | SessionName.fileName                              | n.startFrame | n.endFrame | p.pName         |
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+| "body: move, front;" | "Session 2"               | "s02\part1_layout_p04\20151106_214647_00_RGB.avi" | "2429"       | "2456"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_214647_00_RGB.avi" | "2267"       | "2281"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215120_00_RGB.avi" | "393"        | "414"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_214647_00_RGB.avi" | "649"        | "676"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_214647_00_RGB.avi" | "1365"       | "1387"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_214647_00_RGB.avi" | "1143"       | "1189"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_214647_00_RGB.avi" | "1774"       | "1791"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_214357_00_RGB.avi" | "455"        | "476"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_214357_00_RGB.avi" | "562"        | "585"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_214521_00_RGB.avi" | "267"        | "283"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215829_00_RGB.avi" | "2453"       | "2500"     | "PARTICIPANT 4" |
+| "body: move, front;" | "Session 2"               | "s02\part1_layout_p04\20151106_215829_00_RGB.avi" | "2007"       | "2042"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215829_00_RGB.avi" | "1224"       | "1244"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215829_00_RGB.avi" | "744"        | "762"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215829_00_RGB.avi" | "409"        | "438"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215829_00_RGB.avi" | "139"        | "157"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215547_00_RGB.avi" | "978"        | "1013"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215547_00_RGB.avi" | "334"        | "372"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215320_00_RGB.avi" | "1048"       | "1081"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215320_00_RGB.avi" | "977"        | "1001"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215320_00_RGB.avi" | "303"        | "329"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215320_00_RGB.avi" | "638"        | "674"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215120_00_RGB.avi" | "657"        | "688"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215120_00_RGB.avi" | "688"        | "714"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215829_00_RGB.avi" | "4442"       | "4461"     | "PARTICIPANT 4" |
+| "body: move, front;" | "Session 2"               | "s02\part1_layout_p04\20151106_215829_00_RGB.avi" | "2644"       | "2667"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_193937_00_RGB.avi" | "702"        | "719"      | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_193937_00_RGB.avi" | "1097"       | "1117"     | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_193937_00_RGB.avi" | "1303"       | "1325"     | "PARTICIPANT 5" |
+| "RA: move, up;"      | "Session 3"               | "s03\part2_layout_p05\20151109_193937_00_RGB.avi" | "1383"       | "1402"     | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_193627_00_RGB.avi" | "2003"       | "2018"     | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_194414_00_RGB.avi" | "629"        | "641"      | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_194414_00_RGB.avi" | "796"        | "815"      | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_194134_00_RGB.avi" | "1741"       | "1775"     | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_194134_00_RGB.avi" | "1575"       | "1603"     | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_194134_00_RGB.avi" | "1924"       | "1948"     | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_194614_00_RGB.avi" | "1067"       | "1101"     | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_194757_00_RGB.avi" | "621"        | "645"      | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_194757_00_RGB.avi" | "700"        | "726"      | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_194757_00_RGB.avi" | "327"        | "360"      | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_194757_00_RGB.avi" | "547"        | "555"      | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_194614_00_RGB.avi" | "145"        | "168"      | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_195011_00_RGB.avi" | "956"        | "983"      | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_195011_00_RGB.avi" | "1854"       | "1884"     | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_195011_00_RGB.avi" | "1620"       | "1649"     | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_194757_00_RGB.avi" | "1437"       | "1446"     | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_194757_00_RGB.avi" | "1318"       | "1351"     | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_194757_00_RGB.avi" | "1015"       | "1052"     | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_195206_00_RGB.avi" | "91"         | "120"      | "PARTICIPANT 5" |
+| "RA: move, up;"      | "Session 3"               | "s03\part2_layout_p05\20151109_193627_00_RGB.avi" | "1242"       | "1269"     | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_193627_00_RGB.avi" | "298"        | "343"      | "PARTICIPANT 5" |
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+51 rows
+67 ms
+neo4j-sh (?)$ MATCH (p:Participant)<-[r:PERFORMED_BY]-(n:Label)-[:PRESENT_IN]->(SessionName) 
+> WHERE n.labelName IN ['body: move, front;', 'head: nod;', 'RA: move, up;'] AND SessionName.sessionNumber IN ["Session 2", "Session 3"] AND p.pName IN ["PARTICIPANT 4", "PARTICIPANT 5"] 
+> RETURN n.labelName, SessionName.sessionNumber, SessionName.fileName, n.startFrame, n.endFrame, p.pName;
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+| n.labelName          | SessionName.sessionNumber | SessionName.fileName                              | n.startFrame | n.endFrame | p.pName         |
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+| "body: move, front;" | "Session 2"               | "s02\part1_layout_p04\20151106_214647_00_RGB.avi" | "2429"       | "2456"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_214647_00_RGB.avi" | "2267"       | "2281"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215120_00_RGB.avi" | "393"        | "414"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_214647_00_RGB.avi" | "649"        | "676"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_214647_00_RGB.avi" | "1365"       | "1387"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_214647_00_RGB.avi" | "1143"       | "1189"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_214647_00_RGB.avi" | "1774"       | "1791"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_214357_00_RGB.avi" | "455"        | "476"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_214357_00_RGB.avi" | "562"        | "585"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_214521_00_RGB.avi" | "267"        | "283"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215829_00_RGB.avi" | "2453"       | "2500"     | "PARTICIPANT 4" |
+| "body: move, front;" | "Session 2"               | "s02\part1_layout_p04\20151106_215829_00_RGB.avi" | "2007"       | "2042"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215829_00_RGB.avi" | "1224"       | "1244"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215829_00_RGB.avi" | "744"        | "762"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215829_00_RGB.avi" | "409"        | "438"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215829_00_RGB.avi" | "139"        | "157"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215547_00_RGB.avi" | "978"        | "1013"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215547_00_RGB.avi" | "334"        | "372"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215320_00_RGB.avi" | "1048"       | "1081"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215320_00_RGB.avi" | "977"        | "1001"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215320_00_RGB.avi" | "303"        | "329"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215320_00_RGB.avi" | "638"        | "674"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215120_00_RGB.avi" | "657"        | "688"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215120_00_RGB.avi" | "688"        | "714"      | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 2"               | "s02\part1_layout_p04\20151106_215829_00_RGB.avi" | "4442"       | "4461"     | "PARTICIPANT 4" |
+| "body: move, front;" | "Session 2"               | "s02\part1_layout_p04\20151106_215829_00_RGB.avi" | "2644"       | "2667"     | "PARTICIPANT 4" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_193937_00_RGB.avi" | "702"        | "719"      | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_193937_00_RGB.avi" | "1097"       | "1117"     | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_193937_00_RGB.avi" | "1303"       | "1325"     | "PARTICIPANT 5" |
+| "RA: move, up;"      | "Session 3"               | "s03\part2_layout_p05\20151109_193937_00_RGB.avi" | "1383"       | "1402"     | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_193627_00_RGB.avi" | "2003"       | "2018"     | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_194414_00_RGB.avi" | "629"        | "641"      | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_194414_00_RGB.avi" | "796"        | "815"      | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_194134_00_RGB.avi" | "1741"       | "1775"     | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_194134_00_RGB.avi" | "1575"       | "1603"     | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_194134_00_RGB.avi" | "1924"       | "1948"     | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_194614_00_RGB.avi" | "1067"       | "1101"     | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_194757_00_RGB.avi" | "621"        | "645"      | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_194757_00_RGB.avi" | "700"        | "726"      | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_194757_00_RGB.avi" | "327"        | "360"      | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_194757_00_RGB.avi" | "547"        | "555"      | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_194614_00_RGB.avi" | "145"        | "168"      | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_195011_00_RGB.avi" | "956"        | "983"      | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_195011_00_RGB.avi" | "1854"       | "1884"     | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_195011_00_RGB.avi" | "1620"       | "1649"     | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_194757_00_RGB.avi" | "1437"       | "1446"     | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_194757_00_RGB.avi" | "1318"       | "1351"     | "PARTICIPANT 5" |
+| "head: nod;"         | "Session 3"               | "s03\part2_layout_p05\20151109_194757_00_RGB.avi" | "1015"       | "1052"     | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_195206_00_RGB.avi" | "91"         | "120"      | "PARTICIPANT 5" |
+| "RA: move, up;"      | "Session 3"               | "s03\part2_layout_p05\20151109_193627_00_RGB.avi" | "1242"       | "1269"     | "PARTICIPANT 5" |
+| "body: move, front;" | "Session 3"               | "s03\part2_layout_p05\20151109_193627_00_RGB.avi" | "298"        | "343"      | "PARTICIPANT 5" |
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+51 rows
+51 ms
+neo4j-sh (?)$ 

@@ -1,0 +1,169 @@
+ //================================================================
+ rm -rf data/databases/graph.db
+ //================================================================
+
+http://www.remwebdevelopment.com/blog/sql/some-basic-and-useful-cypher-queries-for-neo4j-201.html
+
+start n = node(*)
+match (n:Label)
+return count(n);
+
+count(n)
+
+3350
+// get number of occurences of a gesture -----------------------------------------------------------------
+MATCH (n:Label) WHERE n.labelName = "body: move, front;" RETURN count(n)
+
+count(n)
+36
+
+
+// get gesture count ----------------------------------------------------
+match (n:Label) where n.labelName="body: move, front;" return count(n)
+
+count(n)
+36
+
+match (n:Label) where n.labelName="head: nod;" return count(n)
+
+count(n)
+54
+
+// get all relations ----------------------------------------------------
+match (Label)-[r]-() return distinct type(r)
+
+type(r)
+PROJECT_TYPE
+PERFORMED_BY
+PRESENT_IN
+
+// get node count for (n:Label)----------------------------------------------------
+start n=node(*)
+match (n:Label)
+where EXISTS(n.labelName)
+return count(n:Label)
+
+count(n:Label)
+3350
+
+// match on relation, find labels in a particular session----------------------------------------------------
+MATCH (user)-[:friend]->(follower)
+WHERE user.name IN ['Joe', 'John', 'Sara', 'Maria', 'Steve'] AND follower.name =~ 'S.*'
+RETURN user.name, follower.name
+
+MATCH (n:Label)-[:PRESENT_IN]->(SessionName) 
+WHERE n.labelName IN ['body: move, front;', 'head: nod;'] AND SessionName.sessionNumber = "Session 1"
+RETURN n.labelName, SessionName.sessionNumber, count(n:Label)
+
+n.labelName			SessionName.sessionNumber	count(n:Label)
+head: nod;			Session 1					11
+body: move, front;	Session 1					7
+
+// for sessions starting with S ----------------------------------------------------
+MATCH (n:Label)-[:PRESENT_IN]->(SessionName) 
+WHERE n.labelName IN ['body: move, front;'] AND SessionName.sessionNumber =~ 'S.*' 
+RETURN n.labelName, SessionName.sessionNumber, count(n:Label)
+
+n.labelName			SessionName.sessionNumber	count(n:Label)
+body: move, front;	Session 3					26
+body: move, front;	Session 2					3
+body: move, front;	Session 1					7
+check--> total 36
+
+MATCH (n:Label)-[:PRESENT_IN]->(SessionName) 
+WHERE n.labelName IN ['head: nod;'] AND SessionName.sessionNumber =~ 'S.*' 
+RETURN n.labelName, SessionName.sessionNumber, count(n:Label)
+
+n.labelName			SessionName.sessionNumber	count(n:Label)
+head: nod;			Session 3					13
+head: nod;			Session 1					11
+head: nod;			Session 2					30
+check--> total 54
+
+// ----------------------------------------------------
+MATCH (n:Label)-[:PRESENT_IN]->(SessionName) 
+WHERE n.labelName IN ['body: move, front;'] AND SessionName.sessionNumber = "Session 3" 
+RETURN n.labelName, SessionName.sessionNumber, count(n:Label)
+
+n.labelName			SessionName.sessionNumber	count(n:Label)
+body: move, front;	Session 3					26
+
+MATCH (n:Label)-[:PRESENT_IN]->(SessionName) 
+WHERE n.labelName IN ['head: nod;'] AND SessionName.sessionNumber = 'Session 2' 
+RETURN count(n:Label)
+
+count(n:Label)
+30
+
+// TWO RELATIONS IN SINGLE QUERY ----------------------------------------------------
+MATCH (p:Participant)<-[r:PERFORMED_BY]-(n:Label)-[:PRESENT_IN]->(SessionName) 
+WHERE n.labelName IN ['body: move, front;'] AND SessionName.sessionNumber = "Session 3" AND p.pName IN ["PARTICIPANT 5"]
+RETURN n.labelName, SessionName.sessionNumber, p.pName, count(n:Label)
+
+n.labelName			SessionName.sessionNumber	p.pName			count(n:Label)
+body: move, front;	Session 3					PARTICIPANT 5	11
+
+
+MATCH (p:Participant)<-[r:PERFORMED_BY]-(n:Label)-[:PRESENT_IN]->(SessionName) 
+WHERE n.labelName IN ['body: move, front;'] AND SessionName.sessionNumber = "Session 3" AND p.pName IN ["PARTICIPANT 5", "PARTICIPANT 6"] 
+RETURN n.labelName, SessionName.sessionNumber, p.pName, count(n:Label)
+
+n.labelName			SessionName.sessionNumber	p.pName			count(n:Label)
+body: move, front;	Session 3					PARTICIPANT 6	15
+body: move, front;	Session 3					PARTICIPANT 5	11
+
+
+// get file name -------------------------------------------------------------------
+MATCH (p:Participant)<-[r:PERFORMED_BY]-(n:Label)-[:PRESENT_IN]->(SessionName) 
+WHERE n.labelName IN ['body: move, front;'] AND SessionName.sessionNumber = "Session 3" AND p.pName IN ["PARTICIPANT 5", "PARTICIPANT 6"] 
+RETURN n.labelName, SessionName.sessionNumber, SessionName.fileName, n.startFrame, n.endFrame, p.pName, count(n:Label)
+
+n.labelName			SessionName.sessionNumber	SessionName.fileName							p.pName			count(n:Label)
+body: move, front;	Session 3					s03\part1_layout_p06\20151109_192442_00_RGB.avi	PARTICIPANT 6	4
+body: move, front;	Session 3					s03\part1_layout_p06\20151109_192740_00_RGB.avi	PARTICIPANT 6	2
+body: move, front;	Session 3					s03\part2_layout_p05\20151109_194757_00_RGB.avi	PARTICIPANT 5	1
+body: move, front;	Session 3					s03\part2_layout_p05\20151109_194414_00_RGB.avi	PARTICIPANT 5	1
+body: move, front;	Session 3					s03\part2_layout_p05\20151109_193627_00_RGB.avi	PARTICIPANT 5	2
+body: move, front;	Session 3					s03\part2_layout_p05\20151109_194134_00_RGB.avi	PARTICIPANT 5	1
+body: move, front;	Session 3					s03\part2_layout_p05\20151109_194614_00_RGB.avi	PARTICIPANT 5	2
+body: move, front;	Session 3					s03\part1_layout_p06\20151109_191547_00_RGB.avi	PARTICIPANT 6	1
+body: move, front;	Session 3					s03\part2_layout_p05\20151109_195206_00_RGB.avi	PARTICIPANT 5	1
+body: move, front;	Session 3					s03\part1_layout_p06\20151109_192321_00_RGB.avi	PARTICIPANT 6	1
+body: move, front;	Session 3					s03\part1_layout_p06\20151109_191826_00_RGB.avi	PARTICIPANT 6	1
+body: move, front;	Session 3					s03\part1_layout_p06\20151109_192232_00_RGB.avi	PARTICIPANT 6	1
+body: move, front;	Session 3					s03\part1_layout_p06\20151109_191947_00_RGB.avi	PARTICIPANT 6	5
+body: move, front;	Session 3					s03\part2_layout_p05\20151109_195011_00_RGB.avi	PARTICIPANT 5	3
+
+
+n.labelName	SessionName.sessionNumber	SessionName.fileName			   n.startFrame	n.endFrame	p.pName		count(n:Label)
+body: move, front;	Session 3	 s03\part1_layout_p06\20151109_192740_00_RGB.avi	77		93		PARTICIPANT 6	1
+body: move, front;	Session 3	 s03\part2_layout_p05\20151109_195011_00_RGB.avi	1620	1649	PARTICIPANT 5	1
+body: move, front;	Session 3	 s03\part1_layout_p06\20151109_192442_00_RGB.avi	1078	1115	PARTICIPANT 6	1
+body: move, front;	Session 3	 s03\part2_layout_p05\20151109_193627_00_RGB.avi	2003	2018	PARTICIPANT 5	1
+body: move, front;	Session 3	 s03\part2_layout_p05\20151109_195011_00_RGB.avi	956		983		PARTICIPANT 5	1
+body: move, front;	Session 3	 s03\part1_layout_p06\20151109_192232_00_RGB.avi	65		81		PARTICIPANT 6	1
+body: move, front;	Session 3	 s03\part1_layout_p06\20151109_191947_00_RGB.avi	2645	2661	PARTICIPANT 6	1
+body: move, front;	Session 3	 s03\part1_layout_p06\20151109_191947_00_RGB.avi	750		768		PARTICIPANT 6	1
+body: move, front;	Session 3	 s03\part2_layout_p05\20151109_194614_00_RGB.avi	145		168		PARTICIPANT 5	1
+body: move, front;	Session 3	 s03\part1_layout_p06\20151109_192442_00_RGB.avi	2357	2398	PARTICIPANT 6	1
+body: move, front;	Session 3	 s03\part1_layout_p06\20151109_191826_00_RGB.avi	71		108		PARTICIPANT 6	1
+body: move, front;	Session 3	 s03\part2_layout_p05\20151109_193627_00_RGB.avi	298		343		PARTICIPANT 5	1
+body: move, front;	Session 3	 s03\part1_layout_p06\20151109_191947_00_RGB.avi	2017	2056	PARTICIPANT 6	1
+body: move, front;	Session 3	 s03\part2_layout_p05\20151109_194614_00_RGB.avi	1067	1101	PARTICIPANT 5	1
+body: move, front;	Session 3	 s03\part2_layout_p05\20151109_194414_00_RGB.avi	796		815		PARTICIPANT 5	1
+body: move, front;	Session 3	 s03\part1_layout_p06\20151109_192442_00_RGB.avi	2729	2758	PARTICIPANT 6	1
+body: move, front;	Session 3	 s03\part1_layout_p06\20151109_192321_00_RGB.avi	78		103		PARTICIPANT 6	1
+body: move, front;	Session 3	 s03\part2_layout_p05\20151109_194134_00_RGB.avi	1741	1775	PARTICIPANT 5	1
+body: move, front;	Session 3	 s03\part2_layout_p05\20151109_194757_00_RGB.avi	621		645		PARTICIPANT 5	1
+body: move, front;	Session 3	 s03\part2_layout_p05\20151109_195011_00_RGB.avi	1854	1884	PARTICIPANT 5	1
+body: move, front;	Session 3	 s03\part1_layout_p06\20151109_191947_00_RGB.avi	2056	2073	PARTICIPANT 6	1
+body: move, front;	Session 3	 s03\part1_layout_p06\20151109_192740_00_RGB.avi	49		77		PARTICIPANT 6	1
+body: move, front;	Session 3	 s03\part1_layout_p06\20151109_192442_00_RGB.avi	50		82		PARTICIPANT 6	1
+body: move, front;	Session 3	 s03\part1_layout_p06\20151109_191547_00_RGB.avi	526		548		PARTICIPANT 6	1
+body: move, front;	Session 3	 s03\part2_layout_p05\20151109_195206_00_RGB.avi	91		120		PARTICIPANT 5	1
+body: move, front;	Session 3	 s03\part1_layout_p06\20151109_191947_00_RGB.avi	4		55		PARTICIPANT 6	1
+
+// -------------------------------------------------------------------------
+MATCH (p:Participant)<-[r:PERFORMED_BY]-(n:Label)-[:PRESENT_IN]->(SessionName) 
+WHERE n.labelName IN ['body: move, front;'] AND SessionName.sessionNumber = "Session 3" AND p.pName IN ["PARTICIPANT 5", "PARTICIPANT 6"] 
+RETURN n.labelName, SessionName.sessionNumber, SessionName.fileName, n.startFrame, n.endFrame, p.pName, count(n:Label)

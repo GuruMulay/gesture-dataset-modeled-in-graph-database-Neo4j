@@ -1,0 +1,21 @@
+1. Downoad on Ubuntu and follow the instructions on:
+	https://neo4j.com/download-thanks/?edition=community&release=3.0.7&flavour=unix&_ga=1.49470766.927393644.1479767120
+
+2. Run it using:
+	$NEO4J_HOME/bin/neo4j console
+	Visit http://localhost:7474 on your browser
+	basicQs file will work on this page after you create the database as described below
+
+3. Open neo4j shell using foellowing command from neo4j installation folder
+	bin/neo4j-shell 
+
+4. Put the gesture3s_1 file inside in (neo4jhome)/import/cwc/gesture3s_1.csv folder
+
+5. Run a BLOCK of commands inside file cwcCsvImport.cql as follows
+	1. In the neo4j shell, copy paste first BLOCK which is --
+		CREATE CONSTRAINT ON (l:Label) ASSERT l.id IS UNIQUE;
+		CREATE CONSTRAINT ON (sn:SessionName) ASSERT sn.sName IS UNIQUE;
+		CREATE CONSTRAINT ON (p:Participant) ASSERT p.pName IS UNIQUE;
+		CREATE CONSTRAINT ON (cwc:Project) ASSERT cwc.pType IS UNIQUE;
+
+	2. Then run the remaining BLOCK of commands. Ensure there is ; at the end of every BLOCK of commands

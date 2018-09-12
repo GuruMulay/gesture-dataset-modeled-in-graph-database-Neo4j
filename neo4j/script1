@@ -1,0 +1,27 @@
+CREATE (s01:Session{name:"Session 1"})-[r:PART_OF {}]->(c:Category {name:"No Sound"})
+CREATE (s02:Session {name:"Session 2"})-[:_PART_OF]->(c)
+CREATE (s03:Session {name:"Session 3"})-[:_PART_OF]->(c)
+
+CREATE (p01:Participant {name: "Participant 1", age: '25', sex: 'M', dominantHand: 'R'})-[:PART_OF]->(s01)
+CREATE (p02:Participant {name: "Participant 2", age: '25', sex: 'M', dominantHand: 'R'})-[:PART_OF]->(s01)
+
+
+CREATE (p03:Participant {name: "Participant 3", age: '25', sex: 'M', dominantHand: 'R'})-[:PART_OF]->(s02)
+CREATE (p04:Participant {name: "Participant 4", age: '25', sex: 'M', dominantHand: 'R'})-[:PART_OF]->(s02)
+
+
+CREATE (p05:Participant {name: "Participant 5", age: '25', sex: 'M', dominantHand: 'R'})-[:PART_OF]->(s03)
+CREATE (p06:Participant {name: "Participant 6", age: '25', sex: 'M', dominantHand: 'R'})-[:PART_OF]->(s03)
+
+
+CREATE (g:Gesture {name:"arms_apart"})-[:PERFORMED_BY]->(p)
+
+RETURN s01,s02,s03,r,c,p01,p02,p03,p04,p05,p06,g
+
+
+
+
+---------------------------------------------------------------------------
+merge (p01:Participant {name:"Participant 1"})
+set p01 = {name: "Participant 1", age: '25', sex: 'M', dominantHand: 'R'}
+return p01

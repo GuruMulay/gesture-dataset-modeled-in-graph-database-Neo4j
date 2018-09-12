@@ -1,0 +1,86 @@
+cwcdb=# SELECT Label, Session, FileName  FROM main_3sessions WHERE Label = 'body: move, front;' AND Session = 'Session 3';
+
+count 26
+Time: 2.140 ms
+---------------------------------------------
+MATCH (n:Label)-[:PRESENT_IN]->(SessionName) 
+WHERE n.labelName IN ['body: move, front;'] AND SessionName.sessionNumber = "Session 3" 
+RETURN n.labelName, SessionName.sessionNumber, SessionName.fileName;
+
+count 26
+82 ms (in neo4j-shell)
+==============================================
+
+SELECT Label, Session, FileName, StartFrame, EndFrame, Participant 
+FROM main_3sessions 
+WHERE Label IN ('body: move, front;', 'head: nod;', 'RA: move, up;') AND Session IN ('Session 2', 'Session 3') AND Participant IN ('Participant 4', 'Participant 5');
+
+on 3 session ---------
+count 51
+Time: 3.859 ms
+
+------------------------------
+SELECT Label, Session, FileName, StartFrame, EndFrame, Participant 
+FROM main_7sessions
+WHERE Label IN ('body: move, front;', 'head: nod;', 'RA: move, up;') AND Session IN ('Session 2', 'Session 3') AND Participant IN ('Participant 4', 'Participant 5');
+
+on 7 sessions
+Time: 11.414 ms
+
+on 10 sessions
+Time: 16.649 ms
+
+on 13 sessions
+Time: 18.127 ms
+
+on 16 sessions
+Time: 19.019 ms
+
+----------------------------
+SELECT Label, Session, FileName, StartFrame, EndFrame, Participant 
+FROM main_16sessions
+WHERE Label IN ('body: move, front;', 'head: nod;', 'RA: move, up;') AND Session IN ('Session 2', 'Session 3') AND Participant IN ('Participant 4', 'Participant 5');
+
+
+SELECT Label, Session, FileName, StartFrame, EndFrame, Participant 
+FROM main_table
+WHERE Label IN ('body: move, front;', 'head: nod;', 'RA: move, up;') AND Session IN ('Session 2', 'Session 3') AND Participant IN ('Participant 4', 'Participant 5');
+
+on 20 sessions --------
+count 51
+Time: 17 ms
+
+MATCH (p:Participant)<-[r:PERFORMED_BY]-(n:Label)-[:PRESENT_IN]->(SessionName) 
+WHERE n.labelName IN ['body: move, front;', 'head: nod;', 'RA: move, up;'] AND SessionName.sessionNumber IN ["Session 2", "Session 3"] AND p.pName IN ["PARTICIPANT 4", "PARTICIPANT 5"] 
+RETURN n.labelName, SessionName.sessionNumber, SessionName.fileName, n.startFrame, n.endFrame, p.pName;
+
+MATCH (p:Participant)<-[r:PERFORMED_BY]-(n:Label)-[:PRESENT_IN]->(SessionName) 
+WHERE n.labelName IN ['body: move, front;', 'head: nod;', 'RA: move, up;'] AND p.pName IN ["PARTICIPANT 4", "PARTICIPANT 5"] 
+RETURN n.labelName, SessionName.sessionNumber, SessionName.fileName, n.startFrame, n.endFrame, p.pName;
+
+count 51 
+1st 152 ms no caching
+3rd 50 ms caching
+
+==============================================
+
+JOIN ------------
+
+SELECT Label, session_table.Session, session_table.FileName, StartFrame, EndFrame, Duration, session_table.Participant FROM gesture_table
+FULL JOIN session_table
+  ON gesture_table.SessionName = session_table.SessionName
+WHERE gesture_table.Label IN ('body: move, front;', 'head: nod;', 'RA: move, up;') AND session_table.Session IN ('Session 2', 'Session 3') AND session_table.Participant IN ('Participant 4', 'Participant 5');
+
+
+WHERE session_table.Project  = 'CWC - No Sound';
+
+WHERE gesture_table.Label IN ('body: move, front;', 'head: nod;', 'RA: move, up;') AND session_table.SessionName IN ('Session 2', 'Session 3');
+
+
+
+SELECT name FROM Person
+LEFT JOIN Person_Department
+  ON Person.Id = Person_Department.PersonId
+LEFT JOIN Department
+  ON Department.Id = Person_Department.DepartmentId
+WHERE Department.name = "IT Department"
